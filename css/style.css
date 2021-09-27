@@ -1,0 +1,242 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: #fff;
+    margin: 0;
+    padding: 0;
+    font-family: 'DINRegular';
+}
+a.navbar_logo img{
+    width: 140px;
+}
+ul.nav_bar li{
+    padding-left: 20px;
+}
+ul.nav_bar li.nav-item a.nav-link{
+    color: #3d3d3d;
+    font-size: 15px;
+    transition: 0.2s;
+}
+ul.nav_bar li.nav-item a.nav-link:hover{
+    color: #f78806;
+}
+ul.nav_bar li.nav-item.active a.nav-link{
+    color: #f78806;
+}
+.banner_section{
+    padding: 60px 0px 20px 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid #cbcccc;
+}
+.banner_section img{
+    margin-right: 20px;
+}
+.banner_section h3{
+    font-size: 32px;
+    font-family: 'Myriad Pro';
+    max-width: 700px;
+    line-height: 40px;
+}
+.project_section{
+    padding: 20px 0px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.2);
+    position: relative;
+}
+.project_heading button{
+    background: none;
+    color: #17aacf;
+    font-size: 17px;
+    border: none;
+    outline: none;
+    font-weight: bold;
+}
+.project_list{
+    margin: 20px 0px;
+}
+.project_list h4{
+    font-size: 21px;
+    margin: 10px 0px 0px 0px;
+    color: #17aacf;
+    font-weight: bold;
+}
+.project_list p{
+    font-size: 14px;
+    color: #3d3d3d;
+}
+.project_list img{
+    width: 100%;
+}
+footer.vinsol_footer{
+    background: #e8e8e8;
+    padding: 40px 0px;
+}
+.flicker{
+    position: relative;
+}
+.flicker h5{
+    font-family: 'DDINBlackIN';
+    font-size: 16px;
+    margin-bottom: 40px;
+}
+.flicker .img_position{
+    position: relative;
+}
+.flicker .img_position img.img_front{
+    position: relative;
+    z-index: 2;
+}
+.flicker .img_position img.img_back{
+    position: absolute;
+    top: 5px;
+    left: 20px;
+    transform: rotate(8deg);
+}
+.twiiter_head h5{
+    font-family: 'DDINBlackIN';
+    font-size: 16px;
+    margin-bottom: 40px;
+}
+.twiiter_head p{
+    font-size: 14px;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+.twiiter_head p a{
+    color: #f78806;
+}
+.twiiter_head ul{
+    list-style-type: none;
+    margin: 0px 0px 0px 0px;
+    padding: 0;
+    display: flex;
+    align-items: baseline;
+}
+.twiiter_head ul li{
+    margin: 0;
+    padding: 0px 10px 0px 0px;
+}
+.twiiter_head ul li h6{
+    font-size: 14px;
+    font-weight: bold;
+    margin: 0px;
+}
+.twiiter_head ul li a{
+    text-decoration: none;
+    color: #f78806;
+    font-size: 14px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.twiiter_head span.divider{
+    width: 150px;
+    height: 2px;
+    text-align: center;
+    margin: 20px auto;
+    background: #acacac;
+    display: block;
+}
+.vinsol_position{
+    position: relative;
+}
+.getin_touch{
+    background: linear-gradient(#ffa103, #f18d11);
+    text-align: center;
+    padding: 40px 80px;
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.4);
+    position: absolute;
+    right: 0;
+    top: -50px;
+    bottom: 0;
+}
+.getin_touch h3{
+    color: #fff;
+    font-size: 32px;
+    font-family: 'Myriad Pro';
+    margin: 10px auto;
+}
+.getin_touch h3::after{
+    content: '';
+    display: block;
+    margin: 0px auto;
+    width: 170px;
+    height: 1px;
+    background: #fff;
+}
+.getin_touch a{
+    text-decoration: none;
+    background: #fafafa;
+    color: #ffa103;
+    padding: 5px 10px;
+    margin: 20px auto;
+    display: block;
+    border-radius: 5px;
+    box-shadow: 2px 2px 10px rgb(0 0 0 / 20%);
+}
+.getin_touch h5{
+    font-size: 18px;
+    font-family: 'DDINBlackIN';
+}
+.getin_touch h5.info::after{
+    content: '';
+    display: block;
+    width: 100px;
+    height: 1px;
+    background: #fff;
+    margin: 20px auto 0px auto;
+}
+.getin_touch h5 span{
+    font-family: 'DINRegular';
+    font-weight: lighter;
+}
+@media only screen and (max-width: 600px) {
+    
+    button.custom_toggle{
+        border: none;
+        background: none;
+        outline: none;
+    }
+    .banner_section img {
+        margin-right: 0px;
+    }
+    .banner_section{
+        flex-direction: column;
+    }
+    .banner_section h3 {
+        font-size: 22px;
+        font-family: 'Myriad Pro';
+        max-width: initial;
+        line-height: 30px;
+    }
+    .project_list {
+        margin: 10px 0px;
+    }
+    footer.vinsol_footer {
+        background: #000000;
+        padding: 300px 0px 20px 0px;
+    }
+    .flicker_hide{
+        display: none;
+    }
+    .getin_touch{
+        padding: 40px 20px;
+        left: 0;
+        top: -370px;
+        bottom: auto;
+    }
+    .getin_touch a{
+        width: 70%;
+    }
+    .twiiter_head h5{
+        color: #fff;
+    }
+    .twiiter_head p{
+        color: #fff;
+    }
+    .twiiter_head ul li h6{
+        color: #fff;
+    }
+  }
